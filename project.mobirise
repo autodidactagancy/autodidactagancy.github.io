@@ -1,0 +1,774 @@
+{
+  "settings": {
+    "name": "Autodidact",
+    "currentPage": "index.html",
+    "versionFirst": "4.0.14",
+    "uniqCompNum": 20,
+    "versionPublish": "4.4.1",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#23408f",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#23408f"
+      ]
+    },
+    "favicon": "@PROJECT_PATH@/assets/images/autodidact-logo-01-128x128.png",
+    "noImageResize": ""
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Главная",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Во весь экран\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Отступ сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Отступ снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Показать стрелочку\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Показать заголовок\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Показать подзаголовок\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Показать текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Показать кнопку (и)\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"@PROJECT_PATH@/assets/images/-1-1920x1080.jpg\" parallax selected>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Перекрытие\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Выберите цвет\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Непрозрач.\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Autodidact</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Красивейшие сайты\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Graphics Agency\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://www.upwork.com/agencies/~016123b4b1991a9151\">more</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "H1": {
+              "color": "#23408f"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#23408f"
+            }
+          },
+          "_cid": "qBrOo3pbHn",
+          "_anchor": "header2-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Отступ сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Отступ снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Ширина текста\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Длина линии\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Цвет линии\" name=\"lineColor\" value=\"#23408f\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text><div><span style=\"font-size: 1.5rem;\">Responsible, punctual, creative agancy. We will do the job till client's satisfaction with result. We love to do my work thoroughly, I'm a kind of perfectionist. We best in:&nbsp;</span></div><div>- VECTOR graphics (Adobe Illustrator, CorelDraw) - logos, brochures, pdf-files, cartoon-type graphics for websites and games, making labels, banners, any kind of advertisement, converting raster (jpg, png) images in vector, etc.; \n</div><div>-VIDEO - Motion graphics, character animation and commercials work programs After Effects, explainers, wateboard, 3D animation.\n</div><div>- RASTER graphics - (Photoshop) - photo editing and photo manipulations, photo enhancing, background removal. We have a professional photographer he able to do high-quality photo retouching.</div><div>-GAME ART - (Animate CC, Flash, Spine, Dragon Bones) sprite, gif, frame by frame animation, game art, concept art, backgrounds for game, pixel art.</div><div>Let's discuss your project.</div></div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
+          "_cid": "qBvq0X0S23",
+          "_anchor": "content9-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "linear-gradient(to left, #554346, #45505b) !important",
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "background": "linear-gradient(to left, rgba(85, 67, 70, 0.85), rgba(69, 80, 91, 0.85)) !important",
+              "-webkit-transition": "0.2s background ease-in-out",
+              "transition": "0.2s background ease-in-out"
+            }
+          },
+          "_name": "gallery2",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Во всю ширину\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Отступ сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Отступ снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Галерея\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"2\" mbr-gallery-show-filter></div>\n    </div>\n\n</section>",
+          "_cid": "qBvkYc0sZB",
+          "_anchor": "gallery2-i",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-4",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/1.3.0-2000x1125.png",
+                "thumb": "@PROJECT_PATH@/assets/images/1.3.0-2000x1125-800x450.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/3.0.0-4-2000x1125.png",
+                "thumb": "@PROJECT_PATH@/assets/images/3.0.0-4-2000x1125-800x449.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/2.3.0-2000x1125.png",
+                "thumb": "@PROJECT_PATH@/assets/images/2.3.0-2000x1125-800x450.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/4.0.0-2000x1125.png",
+                "thumb": "@PROJECT_PATH@/assets/images/4.0.0-2000x1125-800x450.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/-1-23-1080x1455.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1-23-1080x1455-800x1077.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/-2-23-1080x1545.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/2-23-1080x1545-800x1144.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/-3-1080x1521.png",
+                "thumb": "@PROJECT_PATH@/assets/images/3-1080x1521-800x1126.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-9-1999x2828.png",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-9-1999x2828-800x1131.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-10-1999x2847.png",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-10-1999x2847-800x1139.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/4302bc23884379.56697c26d5868-1400x2098.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/4302bc23884379.56697c26d5868-1400x2098-800x1198.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/8096c923884379.5893617fdd504-1191x659.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/8096c923884379.5893617fdd504-1191x659-800x442.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/fox-2000x957.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/fox-2000x957-800x382.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations for children’s books",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/proekt-1772x7382.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/proekt-1772x7382-800x1367.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-13-1999x2828.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-13-1999x2828-800x1131.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-15-1999x2828.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-15-1999x2828-800x1131.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-16-1999x2828.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-16-1999x2828-800x1131.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-18-2000x2674.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-18-2000x2674-800x1069.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/25-2000x2666.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/25-2000x2666-800x1066.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/5-01-2000x2666.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/5-01-2000x2666-800x1066.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/screenshot-from-november-8-2017-5-28-pm-521x694.png",
+                "thumb": "@PROJECT_PATH@/assets/images/screenshot-from-november-8-2017-5-28-pm-521x694-521x694.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "illustrations",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-17-1999x2004.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-17-1999x2004-800x802.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "spirited animation",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-5-preview-1152x2880.png",
+                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-5-preview-1152x2880-800x2000.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "spirited animation",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-7-preview-1152x2880.png",
+                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-7-preview-1152x2880-800x2000.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "spirited animation",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-8-preview-1152x2880.png",
+                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-8-preview-1152x2880-800x2000.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "spirited animation",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-18-preview-1152x2880.png",
+                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-18-preview-1152x2880-800x2000.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "spirited animation",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/hunter.gif",
+                "thumb": "@PROJECT_PATH@/assets/images/hunter-200x200.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "spirited animation",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/armature-animtion0.gif",
+                "thumb": "@PROJECT_PATH@/assets/images/armature-animtion0-400x400.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "spirited animation",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/untitled-13.gif",
+                "thumb": "@PROJECT_PATH@/assets/images/untitled-13-240x240.png",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "storyboards",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-25-1999x2250.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-25-1999x2250-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "storyboards",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-26-1999x2828.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-26-1999x2828-800x1131.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "storyboards",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-27-1999x2828.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-27-1999x2828-800x1131.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "storyboards",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-28-1999x2250.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-28-1999x2250-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "storyboards",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-30-1999x2828.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-30-1999x2828-800x1131.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "storyboards",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-13-23-16357.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/s4cGFecnCUQ",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-14-2-274958.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/eIib-1bn4YE",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-14-17-262959.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/2U1ji0bALNk",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-14-33-514399.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/N4lNa4Shh_E",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-14-45-46342.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/9jiiJKVLQKo",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-14-56-656804.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/vQGVT2k9BUw",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-15-6-835330.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/jJkkKM2I-g0?t=5s",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": false
+              },
+              {
+                "tags": "animation",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-10-1-13-15-17-840426.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/2x_dYq-2ixw?t=3s",
+                "image": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/portfolio-34-1999x2251-800x900.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Введите описание",
+                "active": true
+              }
+            ]
+          }
+        },
+        {
+          "_name": "footer1",
+          "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->  \n        <input type=\"range\" inline title=\"Отступ сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Отступ снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Показать авторство\" name=\"showCopyright\" checked>\n        <select title=\"Иконок\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Эффект раскрытия\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#23408f\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Перекрытие\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Выберите цвет\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Непрозрач.\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content text-white\">\n            <div class=\"col-12 col-md-3\">\n                <div class=\"media-wrap\">\n                    <a href=\"https://www.upwork.com/agencies/~016123b4b1991a9151\">\n                        <img src=\"@PROJECT_PATH@/assets/images/upwork-290x264.png\" alt=\"Mobirise\" title>\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\"></h5>\n                <p class=\"mbr-text\"></p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\"></h5>\n                <p class=\"mbr-text\"></p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">Contacts</h5>\n                <p class=\"mbr-text\"><br>E-mail: maximsokal@gmail.com\n<br>Mobile: +38 050 570 21 30\n<br>Skype: maxsokal<br></p>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\">\n                        © Autodidact Graphics Agency 2018</p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://www.facebook.com/autodidactgraphicagency\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.linkedin.com/company/11289955/\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-linkedin socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/channel/UCtOTBiV9ZnjApf9T860bTKA\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://www.instagram.com/mobiriz.store\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/101391243229082682678\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://vk.com/mobirise_rus\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".content": {
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "> div:not(:last-child)": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            ".media-wrap": {
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              ".mbr-iconfont-logo": {
+                "font-size": "7.5rem",
+                "color": "#f36"
+              },
+              "img": {
+                "height": "6rem"
+              }
+            },
+            ".footer-lower": {
+              ".copyright": {
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "1rem",
+                  "text-align": "center"
+                }
+              },
+              "hr": {
+                "margin": "1rem 0",
+                "border-color": "#fff",
+                "opacity": ".05"
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                "-webkit-justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.3rem",
+                  "color": "#fff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "justify-content": "center",
+                  "-webkit-justify-content": "center"
+                }
+              }
+            },
+            ".copyright > p": {
+              "text-align": "left"
+            },
+            "H5": {
+              "text-align": "right"
+            },
+            "P": {
+              "text-align": "right"
+            }
+          },
+          "_cid": "qBrOo3NCrg",
+          "_anchor": "footer1-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
