@@ -420,91 +420,7 @@
                 "alt": "",
                 "customStyle1": "display-7",
                 "caption": "Введите описание",
-                "active": false
-              },
-              {
-                "tags": "spirited animation",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-5-preview-1152x2880.png",
-                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-5-preview-1152x2880-800x2000.png",
-                "alt": "",
-                "customStyle1": "display-7",
-                "caption": "Введите описание",
-                "active": false
-              },
-              {
-                "tags": "spirited animation",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-7-preview-1152x2880.png",
-                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-7-preview-1152x2880-800x2000.png",
-                "alt": "",
-                "customStyle1": "display-7",
-                "caption": "Введите описание",
-                "active": false
-              },
-              {
-                "tags": "spirited animation",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-8-preview-1152x2880.png",
-                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-8-preview-1152x2880-800x2000.png",
-                "alt": "",
-                "customStyle1": "display-7",
-                "caption": "Введите описание",
-                "active": false
-              },
-              {
-                "tags": "spirited animation",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-18-preview-1152x2880.png",
-                "thumb": "@PROJECT_PATH@/assets/images/imgpsh-fullsize-18-preview-1152x2880-800x2000.png",
-                "alt": "",
-                "customStyle1": "display-7",
-                "caption": "Введите описание",
-                "active": false
-              },
-              {
-                "tags": "spirited animation",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/hunter.gif",
-                "thumb": "@PROJECT_PATH@/assets/images/hunter-200x200.png",
-                "alt": "",
-                "customStyle1": "display-7",
-                "caption": "Введите описание",
-                "active": false
-              },
-              {
-                "tags": "spirited animation",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/armature-animtion0.gif",
-                "thumb": "@PROJECT_PATH@/assets/images/armature-animtion0-400x400.png",
-                "alt": "",
-                "customStyle1": "display-7",
-                "caption": "Введите описание",
-                "active": false
-              },
-              {
-                "tags": "spirited animation",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/untitled-13.gif",
-                "thumb": "@PROJECT_PATH@/assets/images/untitled-13-240x240.png",
-                "alt": "",
-                "customStyle1": "display-7",
-                "caption": "Введите описание",
-                "active": false
+                "active": true
               },
               {
                 "tags": "storyboards",
@@ -672,7 +588,7 @@
                 "alt": "",
                 "customStyle1": "display-7",
                 "caption": "Введите описание",
-                "active": true
+                "active": false
               }
             ]
           }
